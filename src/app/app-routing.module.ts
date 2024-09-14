@@ -5,6 +5,7 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
 import { TemplateFormControlsComponent } from './user/template-form-controls/template-form-controls.component';
+import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, title: "Home - Joe's Robot Shop" },
@@ -13,6 +14,8 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'form-controls', component: TemplateFormControlsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'life-cycle-component', component: LifecycleDemoComponent },
+
 ];
 
 @NgModule({

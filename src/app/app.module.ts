@@ -11,6 +11,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserModule } from './user/user.module';
+import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UserModule } from './user/user.module';
     SiteHeaderComponent,
     ProductDetailsComponent,
     CartComponent,
+    LifecycleDemoComponent,
   ],
   imports: [
     BrowserModule,
