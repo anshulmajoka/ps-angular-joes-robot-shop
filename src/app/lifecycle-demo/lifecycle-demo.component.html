@@ -6,5 +6,8 @@
     <input [(ngModel)]="parentInputData" placeholder="Type here to change inputData" />
     <p>{{ 'this is a custom pipe' | customUppercase }}</p>
 
+    <p [appHoverHighlight]="'lightblue'" [defaultColor]="'lightgray'">Hover over this text to see a highlight effect.</p>
+    <button [appHoverHighlight]="'lightgreen'">Hover over this button</button>
+
 </div>
   

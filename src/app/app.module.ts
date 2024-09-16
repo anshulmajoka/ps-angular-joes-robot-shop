@@ -12,7 +12,8 @@ import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserModule } from './user/user.module';
 import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
-import { CustomUppercasePipe } from './custom-uppercase.pipe';
+import { CustomUppercasePipe } from './pipes/custom-uppercase.pipe';
+import { CustomDirectiveHoverHighlightDirective } from './directives/custom-directive-hover-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CustomUppercasePipe } from './custom-uppercase.pipe';
     CartComponent,
     LifecycleDemoComponent,
     CustomUppercasePipe,
+    CustomDirectiveHoverHighlightDirective,
   ],
   imports: [
     BrowserModule,
