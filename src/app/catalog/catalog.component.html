@@ -10,6 +10,7 @@
   <ul class="products">
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
       <bot-product-details [product]="product" (buy)="addToCart(product)"></bot-product-details>
+      <!-- Buy is the event that will be emmited by the child component, In this case product details-->
     </li>
   </ul>
 </div>

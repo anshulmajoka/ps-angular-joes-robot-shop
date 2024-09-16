@@ -17,5 +17,7 @@ export class ProductDetailsComponent {
 
   buyButtonClicked(product: IProduct) {
     this.buy.emit();
+    // this event will be received by the parent component, in this case catalog-component
+    // "buy" should match with the parent attribute
   }
 }
