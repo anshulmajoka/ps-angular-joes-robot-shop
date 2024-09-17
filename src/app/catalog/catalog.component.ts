@@ -19,7 +19,7 @@ export class CatalogComponent {
     private router: Router,
     private route: ActivatedRoute
   ) { }
-
+//
   ngOnInit() {
     this.productSvc.getProducts().subscribe((products) => {
       this.products = products;

@@ -1,0 +1,8 @@
+<!-- parent.component.html -->
+<h3>Parent Component</h3>
+<p>Data from Grandparent: {{ parentData }}</p>
+
+<bot-child [childData]="parentData" (notifyParent)="receiveNotification($event)"></bot-child>
+
+<p>Data shared between Child and Sibling: {{ sharedData }}</p>
+<bot-sibling [siblingData]="sharedData"></bot-sibling>

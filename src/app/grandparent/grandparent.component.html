@@ -1,0 +1,6 @@
+<!-- grandparent.component.html -->
+<h2>Grandparent Component</h2>
+<p>Sending data to Parent: {{ grandparentData }}</p>
+<bot-parent [parentData]="grandparentData"></bot-parent>
+
+<!-- Here, GrandparentComponent sends grandparentData to ParentComponent using property binding ([parentData]). -->

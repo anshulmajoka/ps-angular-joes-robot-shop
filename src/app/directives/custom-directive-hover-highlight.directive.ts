@@ -8,7 +8,12 @@ export class CustomDirectiveHoverHighlightDirective {
   @Input() defaultColor: string = '';  // Accept input for default color
   @Input('appHoverHighlight') highlightColor: string = '';  // Accept input for highlight color
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) {
+    console.log(el.nativeElement.id);
+    if(el.nativeElement.id === 'test-id'){
+        el.nativeElement.style.backgroundColor = 'yellow';
+    }    
+  }
 
   // Method to change background color
   private highlight(color: string) {

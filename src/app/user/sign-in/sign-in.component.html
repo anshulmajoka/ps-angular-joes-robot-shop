@@ -3,6 +3,11 @@
     <img class="logo" src="/assets/images/logo.png" />
     <div class="sign-in">Sign In</div>
     <div class="sub-text">to acquire awesome bots</div>
+    <!-- #email="ngModel" is used so that we can use email directly
+    #email="ngModel": This defines a template reference variable named email that is bound to the ngModel directive on the input element. 
+    This means #email will now hold a reference to the ngModel instance for this input field.
+    email is directly used in line #13,#14
+    -->
     <input name="email" required email #email="ngModel" [(ngModel)]="credentials.email" placeholder="Email Address"
       type="text" />
     <em class="error" *ngIf="email.errors?.['required'] && email.touched">Email is required</em>

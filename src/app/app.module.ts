@@ -14,6 +14,10 @@ import { UserModule } from './user/user.module';
 import { LifecycleDemoComponent } from './lifecycle-demo/lifecycle-demo.component';
 import { CustomUppercasePipe } from './pipes/custom-uppercase.pipe';
 import { CustomDirectiveHoverHighlightDirective } from './directives/custom-directive-hover-highlight.directive';
+import { GrandparentComponent } from './grandparent/grandparent.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SiblingComponent } from './sibling/sibling.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { CustomDirectiveHoverHighlightDirective } from './directives/custom-dire
     LifecycleDemoComponent,
     CustomUppercasePipe,
     CustomDirectiveHoverHighlightDirective,
+    GrandparentComponent,
+    ParentComponent,
+    ChildComponent,
+    SiblingComponent,
   ],
   imports: [
     BrowserModule,

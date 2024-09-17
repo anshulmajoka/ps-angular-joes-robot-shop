@@ -8,6 +8,16 @@
 
     <p [appHoverHighlight]="'lightblue'" [defaultColor]="'lightgray'">Hover over this text to see a highlight effect.</p>
     <button [appHoverHighlight]="'lightgreen'">Hover over this button</button>
+    <p id="test-id" appHoverHighlight> This will be Blue byDefault Because Of Custom Directive</p>
 
 </div>
   
+<pre> 
+    Grandparent
+        Parent
+            Child
+            Sibling
+</pre>
+
+<!-- app.component.html -->
+<bot-grandparent></bot-grandparent>
